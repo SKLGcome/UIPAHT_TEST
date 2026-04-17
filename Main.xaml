@@ -1,30 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugadt="clr-namespace:UiPath.GSuite.Activities.Drive.Triggers;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
-    <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
-    <x:Property Name="UiPathEventObjectType" Type="InArgument(x:String)" />
-    <x:Property Name="UiPathEventObjectId" Type="InArgument(x:String)" />
-    <x:Property Name="UiPathAdditionalEventData" Type="InArgument(x:String)" />
-  </x:Members>
-  <this:Main.UiPathEventConnector>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.UiPathEventConnector>
-  <this:Main.UiPathEvent>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.UiPathEvent>
-  <this:Main.UiPathEventObjectType>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.UiPathEventObjectType>
-  <this:Main.UiPathEventObjectId>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.UiPathEventObjectId>
-  <this:Main.UiPathAdditionalEventData>
-    <InArgument x:TypeArguments="x:String" />
-  </this:Main.UiPathAdditionalEventData>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugae="clr-namespace:UiPath.GSuite.Activities.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -81,6 +55,8 @@
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.GSuite.Activities.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -144,7 +120,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="522,3626" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1134,666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sttResult" />
       <Variable x:TypeArguments="x:String" Name="meetingMinutes" />
@@ -155,196 +131,267 @@
           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="String.Join(vbCrLf, New String(){&#xD;&#xA;&quot;너는 공공기관 ISP/ISMP 및 정보화 사업 회의록을 작성하는 전문 컨설턴트다.&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;아래 회의 스크립트를 분석하여, 반드시 지정된 회의록 양식에 맞는 공식 회의록을 작성하라.&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[중요 작성 원칙]&quot;,&#xD;&#xA;&quot;1. 회의록은 반드시 한국어로 작성할 것&quot;,&#xD;&#xA;&quot;2. 문체는 공식 문서체로 작성할 것&quot;,&#xD;&#xA;&quot;3. 불필요한 설명, 해설, 감상, 추측, 서론, 결론은 작성하지 말 것&quot;,&#xD;&#xA;&quot;4. 없는 정보는 절대 임의로 생성하지 말고 공란으로 둘 것&quot;,&#xD;&#xA;&quot;5. 회의 내용을 단순 나열하지 말고, 주제별로 구조화하여 정리할 것&quot;,&#xD;&#xA;&quot;6. 회의 내용 / 회의 결과 / 향후 계획은 반드시 구분해서 작성할 것&quot;,&#xD;&#xA;&quot;7. 회의 내용은 '논의된 사항', 회의 결과는 '결정된 사항', 향후 계획은 '이후 추진할 사항' 중심으로 작성할 것&quot;,&#xD;&#xA;&quot;8. 중복 내용은 제거하되, 의미상 필요한 내용은 유지할 것&quot;,&#xD;&#xA;&quot;9. 요청사항이 명확히 언급된 경우 별도로 정리할 것&quot;,&#xD;&#xA;&quot;10. 출력은 반드시 아래 양식만 출력하고, 그 외 문구는 절대 추가하지 말 것&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[출력 양식]&quot;,&#xD;&#xA;&quot;프로젝트 회의록&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;프로젝트명&quot;,&#xD;&#xA;&quot;단      계&quot;,&#xD;&#xA;&quot;회  의  명&quot;,&#xD;&#xA;&quot;장      소&quot;,&#xD;&#xA;&quot;작성자&quot;,&#xD;&#xA;&quot;일      시&quot;,&#xD;&#xA;&quot;참  석  자&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;회의 안건&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;회 의 내 용&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;회 의 결 과&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;요청사항 (수행사 -&gt; 고객사)&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;요청사항 (고객사 -&gt; 수행사)&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;향후계획&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[작성 형식 규칙]&quot;,&#xD;&#xA;&quot;- 제목 및 본문 구조는 깔끔한 업무 문서 형식으로 정리할 것&quot;,&#xD;&#xA;&quot;- 회의 내용, 회의 결과, 향후 계획은 아래 형식을 따를 것&quot;,&#xD;&#xA;&quot;- 대분류는 가., 나., 다., … 형식 사용&quot;,&#xD;&#xA;&quot;- 각 항목 내부 내용은 '- ' 하이픈으로 정리&quot;,&#xD;&#xA;&quot;- 시스템별 세부 항목은 아래와 같이 작성 가능&quot;,&#xD;&#xA;&quot;  예:&quot;,&#xD;&#xA;&quot;  - MIS&quot;,&#xD;&#xA;&quot;    · 기존 패키지 기반 대규모 커스터마이징 상태&quot;,&#xD;&#xA;&quot;    · 신규 개발 또는 노코드 방식 검토 필요&quot;,&#xD;&#xA;&quot;- 요청사항은 실제 회의에서 요청되거나 후속 전달이 필요한 사항만 정리할 것&quot;,&#xD;&#xA;&quot;- 회의 결과는 회의 내용의 요약이 아니라, 실제 합의·결정·확정된 내용 위주로 작성할 것&quot;,&#xD;&#xA;&quot;- 향후 계획은 추후 추진 예정인 작업, 자료 요청, 인터뷰, 협의 일정, 검토 계획 등을 중심으로 작성할 것&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[회의 내용 예시]&quot;,&#xD;&#xA;&quot;가. 예산 대응 필요성 및 단기 산출물 방향&quot;,&#xD;&#xA;&quot;- NIA의 기재부 예산 신청 대응 필요&quot;,&#xD;&#xA;&quot;- 5월 중순 활용 가능한 중간 수준 산출물 필요&quot;,&#xD;&#xA;&quot;- 상세 ISP 결과물보다 사업계획서 및 예산 근거자료 중심 작성 필요&quot;,&#xD;&#xA;&quot;- 초기 산출물은 원페이지 수준의 러프한 자료 우선 활용&quot;,&#xD;&#xA;&quot;- 기존 예산 신청 규모는 약 60억 수준&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;나. 대상 시스템 범위 및 분석 초점&quot;,&#xD;&#xA;&quot;- 전체 대상은 15개 시스템이나, 실질 핵심은 4개 시스템 중심&quot;,&#xD;&#xA;&quot;- 나머지 11개 시스템은 핵심 시스템 연계 성격&quot;,&#xD;&#xA;&quot;- 핵심 4개 시스템은 MIS, 전자결재(온나라), 사업관리(DPMS), 업무포털&quot;,&#xD;&#xA;&quot;- To-Be 방향은 현행 유지보다 제외·통합·추가를 포함한 재구성 관점&quot;,&#xD;&#xA;&quot;- 핵심 4개 시스템은 업무 프로세스 중심 분석 필요&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[회의 결과 예시]&quot;,&#xD;&#xA;&quot;가. 우선 추진방향&quot;,&#xD;&#xA;&quot;- 최우선 과제는 기재부 예산 대응용 사업계획서 및 예산 근거자료 작성&quot;,&#xD;&#xA;&quot;- 본 ISP 분석은 예산 대응 문서 작성과 병행 추진&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;나. 분석 범위 및 방법&quot;,&#xD;&#xA;&quot;- 현황분석은 15개 전체 동일 깊이 검토가 아닌 핵심 4개 시스템 중심 우선 추진&quot;,&#xD;&#xA;&quot;- 분석 초점은 기능 위주가 아닌 업무 프로세스 중심 설정&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[향후 계획 예시]&quot;,&#xD;&#xA;&quot;가. 우선 추진방향&quot;,&#xD;&#xA;&quot;- 최우선 과제는 기재부 예산 대응용 사업계획서 및 예산 근거자료 작성&quot;,&#xD;&#xA;&quot;- 본 ISP 분석은 예산 대응 문서 작성과 병행 추진&quot;,&#xD;&#xA;&quot;&quot;,&#xD;&#xA;&quot;[최종 지시]&quot;,&#xD;&#xA;&quot;이제 아래 회의 스크립트를 바탕으로 위 양식에 맞는 회의록을 작성하라.&quot;,&#xD;&#xA;&quot;회의 내용 / 회의 결과 / 향후 계획은 반드시 예시와 유사한 수준의 구조와 밀도로 정리하되, 입력 스크립트에 없는 정보는 임의로 생성하지 말 것.&quot;,&#xD;&#xA;&quot;파일 붙이지 말 것&quot;&#xD;&#xA;})" />
         </Variable.Default>
       </Variable>
+      <Variable x:TypeArguments="ugdm:GDriveRemoteItem[]" Name="DRIVEFILES" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ugadt:NewFileCreated ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DriveId="{x:Null}" Filter="{x:Null}" JobData="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="1fgxwN8QnumOiYTpw6qEzaGRcjqBk_RZV" ConnectionId="daae480c-183c-43f0-b909-559aaf1855a3" DisplayName="File Created" FilterExpression="(ParentID=='1fgxwN8QnumOiYTpw6qEzaGRcjqBk_RZV')" sap:VirtualizedContainerService.HintSize="522,259" sap2010:WorkflowViewState.IdRef="NewFileCreated_3" LocationFriendlyName="UIPATH" Result="[Created_file]" UiPathEvent="[UiPathEvent]" UiPathEventConnector="[UiPathEventConnector]" UiPathEventObjectId="[UiPathEventObjectId]" UiPathEventObjectType="[UiPathEventObjectType]" UseConnectionService="True">
-      <ugadt:NewFileCreated.DriveItem>
-        <ugam:TriggerDriveItemArgument ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" ReferenceId="{x:Null}" BrowserId="1fgxwN8QnumOiYTpw6qEzaGRcjqBk_RZV" ConnectionKey="daae480c-183c-43f0-b909-559aaf1855a3" FriendlyName="UIPATH" FullPathHint="My Drive/UIPATH" InputMode="Browse">
-          <ugam:TriggerDriveItemArgument.Backup>
+    <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" StarredOnly="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1fgxwN8QnumOiYTpw6qEzaGRcjqBk_RZV" ConnectionId="daae480c-183c-43f0-b909-559aaf1855a3" CurrentItemVariableName="CurrentItem" DisplayName="For Each File/Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="486,831" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_1" LocationFriendlyName="UIPATH" LocationInputMode="Browse" MaxResults="200" UseConnectionService="True" WhatToReturn="FilesAndFolders">
+      <uga:ForEachFileFolderConnections.Body>
+        <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="ugdm:GDriveRemoteItem" Name="CurrentItem" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItemIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="484,670" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="PHASE 1 — 핸드폰 stt 다운" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_17">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Rename" ConnectionId="daae480c-183c-43f0-b909-559aaf1855a3" DestinationPath="C:\Users\consu\OneDrive\바탕 화면\회사 작업 폴더\실제 프로젝트\AX기반의 차세대 업무 시스템 구축을 위한 ISMP\회의록 TXT 폴더" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" File="[CurrentItem]" FileInputMode="UseExisting" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_3" NewResult="[downloadedFile]" UseConnectionService="True">
+                <uga:DownloadFileConnections.FileIdBackup>
+                  <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UseExisting">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+                        <x:Null />
+                        <x:Null />
+                        <x:Null />
+                      </scg:List>
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </uga:DownloadFileConnections.FileIdBackup>
+                <uga:DownloadFileConnections.Item>
+                  <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" Existing="[CurrentItem]" InputMode="UseExisting">
+                    <ugam:DriveItemArgument.FullPathHint>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ugam:DriveItemArgument.FullPathHint>
+                    <ugam:DriveItemArgument.ParentIdFullPathHint>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ugam:DriveItemArgument.ParentIdFullPathHint>
+                  </ugam:DriveItemArgument>
+                </uga:DownloadFileConnections.Item>
+              </uga:DownloadFileConnections>
+            </Sequence>
+            <Sequence DisplayName="PHASE 2 — ChatGPT 브라우저 자동화" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ChatGPT" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2677" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="486,2483" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '사이드바 열기'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com" ContentHash="M4q_bkLG3Uaapo6mqAbu2A" DesignTimeRectangle="26, 105, 22, 21" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='use' /&gt;" Guid="999bd245-2697-4a6b-bf8e-2d2f9dea5cf7" InformativeScreenshot="b58719701e7605a45eebbff247277120.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/zWDKSX9HAEGTmhPup9-Yfw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '회의록 작성 접속'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com" ContentHash="PEiQ4MPfJkWLZzfL2Rpk1Q" DesignTimeRectangle="105, 1259, 228, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='NIA 회의록 작성' class='truncate' parentid='stage-slideover-sidebar' tag='DIV' /&gt;" Guid="a017c1c3-2abb-4320-ae6c-b38dad1fdec5" InformativeScreenshot="d801971539fca1a5574df930fb2a8a06.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/PCfXLzAtDkyx9NKWQD6Gdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'BUTTON composer-plus-btn'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="oB4CRiRyyk6hse3_e7-p4w" DesignTimeRectangle="916, 649, 79, 79" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='composer-plus-btn' tag='BUTTON' /&gt;" Guid="fa193e58-e931-4c7c-a91a-0457e8841e84" InformativeScreenshot="0d5f6fbcb6e24ae0f71a8d91c4fdeb2e.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/56keNxELZUCH46hTJo8vxQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '사진 및 파일 추가'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="0VIFcr3w0EqhjOgI0iNblw" DesignTimeRectangle="993, 759, 248, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='truncate' parentid='radix-_r_a3_' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' idx='44' /&gt;" Guid="cddb88f1-c6c3-4d8d-a6ab-614a9cf4f714" InformativeScreenshot="5f03294b59cf652b84902b7da2307713.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/Hhfh8rS7Pk2bUTPzBi7JlQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Text="[downloadedFile.LocalPath]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="wUW6nCwVR0SRS2FtNS7_uw" DesignTimeRectangle="430, 1420, 998, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="d9e8ebd7-4ff5-440d-a536-de64df73f890" InformativeScreenshot="dbc4a62eedfec78595b160ed37982b6a.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/0qEmcsmkJ0mzClmLBO7ITA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '열기(&amp;O)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="kBAxMWBFk0qFdVIjHFuENg" DesignTimeRectangle="1489, 1469, 176, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='열기(&amp;amp;O)' /&gt;" Guid="56279307-5167-4e01-9103-4668272f19c7" InformativeScreenshot="9861a957288d82d30d4c92589c9f6770.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/YTadk1aiN0OPDuH2qDRQ3Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="[UiPath.UIAutomationNext.Enums.NTypeByClipboardMode.Always]" DisplayName="Type Into 'P'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Text="[promptText]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="Ts16O4gvfECxJUDU9MJP3g" DesignTimeRectangle="1009, 661, 1368, 53" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" Guid="656f6951-90c0-47a7-ba0c-797d66833048" InformativeScreenshot="13c6f53a7dc30beccf48fe6ed1fbef10.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/nuf2PSeiakKJU4tppHNPdA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'use cdnassetssprites…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="r_YihSN5HEG5RvfSd3jDBg" DesignTimeRectangle="2509, 673, 26, 31" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='composer-submit-button' tag='use' /&gt;" Guid="737cf75b-6cfb-4da9-a181-013ab11860c2" InformativeScreenshot="84dd01970046b742af6a9cf80e4be9f4.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/_U38tDL8wEu0KZ1GrPprKw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NCheckState DisplayName="Check App State 'svg'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,767" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Timeout="60" Version="V5">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="450,439" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'svg(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="n3bnfkpXLUKmscykpQCS-A" DesignTimeRectangle="1717, 1413, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='thread-bottom-container' tag='svg' /&gt;" Guid="f5fb4a66-782e-4881-b49a-008796c50f13" InformativeScreenshot="c4e9aac01bf63a9f2e6797601c849d33.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/sBjyWswTdkuANZk9KeeyYA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'DIV(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="sPaB9iQLgU2vkyN_WuDCdg" DesignTimeRectangle="894, 1112, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='icon' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' idx='190' parentid='thread' tag='svg' /&gt;" Guid="5a5fe57d-0412-41d2-94d0-d34759a197ac" ImageAccuracyArgument="0.5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG7SURBVGhD7ZeBjYMwDEW7KEOwBEMwBEMwBEswBKdfydK/iDg/dSrgLk+yVCGa5DkmhtfxcF7phafRBa6mC1xNU4FlWd4xTdMxjuM7hmEoht2LmOf5WNf12Pc9Hf6UJgKYDItOFxYJyECkRFgAi08nbxWQ2LYtnfIXYYE080rWciAZWDCXHn57hAQwGS++lC0ViLAEnqscIQFku0Xmz+DkYJdzhARwYrTOvsHPlldGIQGuf/XYq6ELMCgRa1IWNoHVqRfWoGpKjcfPURT4VpNS4P/kcAW+3aRKZcf353AF0syjhFACmLg2rAR5PJSVR0iAz3ilpavwuAhv3JAAn/GtmxSP7XXZkAC38lKt1qJ22WYCreHDoQukFwzlz59SK+D1jS7wCf9CgPuF1/BuKZB+6Xl96BYC3uvGmSBzuYAXyivMbQWUt1VwCwH+8LE3XpWswB06scLfFeCPGaUWa1DPeAVJoKYmFVjA+x5QyApwM1FPBIWaJqWQFcCC+TlQzmQPjFfbpBSyAiA97lpHJCGGKwAwCe9Ei4juJlMUANgJ1CpODGw7FqBK2b2I2ialIAncmS5wNV3gah4v8AMVl800IxLpLQAAAABJRU5ErkJggg==" InformativeScreenshot="f2e8898603c6042a03653ec015b2ccd4.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/8JiUUv6K80Od6gu_1ABcJw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="OMuKIDkxIUy0PuWKZfcoLQ" DesignTimeRectangle="2500, 1563, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='icon' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;div&amp;gt;svg' parentid='thread-bottom-container' tag='svg' /&gt;" Guid="1cc6c640-8836-4f35-8479-80dd0000abfd" InformativeScreenshot="f9dde29eaf65461f33287a9713012bac.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/LeY8T0IP8ECYaj_3syJAgg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NCheckState.Target>
+                      </uix:NCheckState>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                    <ActivityFunc.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                    </ActivityFunc.Argument>
+                  </ActivityFunc>
+                </uix:NApplicationCard.OCREngine>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="1907, -296, 2906, 1730" BrowserType="Chrome" ContentHash="gCjVGIZSsE2ALFjNBHXTgQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA+eSURBVGhDvZcHVFVX1scxEoMYBbFQBHwUpfcu8nj0YgE09lBiEsvE6EzUiQ0eRomdLihVQDBjQzErZkYBFclEY0kmMzETC6CA8VN5YJKJ+p5nf2vvW7jvhThJVr7vrPVfe599zr33t8/d57z79PR+hzZcf7DxXDOTtE0TrXIq3ezqL01yb7sR4qm6F+4L98L94IbcS/VZkGtbvbdD86YJVjkxY4wTLQ2GyEYYDjWaKQ9MKVm15FhTTubXX1XlPUI1ZmdeK1m5uH6GPCAZ5+g+73dpCL3YynRFvefEZgGUsxI/TOhz+jbMh3Q3PgQ61y9jbbWFz+7WV8CDD2vgfxqq4O7RcsA++hhD/981BT9mps3OHWM8wlSX4Tc1BF8ts1BeD/HouRfmwwhM4a1tETyMs9IYqjstibVX50H30XK4d3wfXN69GepWpMDOWZGwMT6ItGtWJNQtT4ZLhZtoDs79siK7L9rPM0GX51e11TJz5XWxNIQV7YejWKg3E1c61JvdDfWifrfCBzpXL4L2A0W0wl/s3UrQaU5mkGQxFGaMM4TZ40eQ0McYjuGcf5Rso2vaDhSx5TPjNwwaNGiQLttzG9Zro6/LVVxNEgLqWAGUrMIH7iq8eeEcH+haNAfaPygmkL9u/CMs8rAm0DfdrSB3bgzUv7sITm9eCac2r4Sj7y6CnDnR8IabJc1Z7GENpza9Q9fiPWaHTXpNl/Fn22zT0anfTPZQiYAKbwLqB5XC8gr1hm6U3It1yz1Z14Kp0F63mwBOZq6AVyeMhrk2xrDzlQj4smwHlYnqZB18d+ogCX2M4VvamhhKc5MnjoG/8Ulc31/4NMTdKUqX9Sdt1XgzpQArgAmri3Cc9eRsKDdO8HJP1h3qxVtvuL11DW3Iq8Xv06oi0N6FSQTTdaQMuusr4EpRFr0FXH30cb6wT4rTEugafGtYThgvXbX0mC6vVltpbaaUrq4Aw60s78u9qN8VwgOjL/ci0ZjcCzpjJ0HHB8Xw7bFK2JakgJmWw8giGJYDgiJ4qqMp1X0iX/uYCI51/GUPzcU3geWEe4K/lo0daWSuy01ttumo1G6CkpQD3+dAeUDectCemAjnT/Zggr2zdD6BXMzfSJBY87iKtPJHy+GT7HRYYD8KFrpYQNmbr0DZGzPJx9jfczJoDs7FcsK3h8ld2r2Z7vlqlHyJLjtt2GtBbj0EGOLJEAJBpavKQXvyoJztFHxKwhM6Qzi170pn909UQ82yBbTCuDmxdG7V7QaM730tEZLGGcKhlQup9lHo49yShUnw4EQ1zcVrsudEU/zAihS6tmrt2x/r8utdCHBu01pFBEKfB5Ja8oPdmQArajLKg2xHdR698u0zwqgEsFzw4W0HiuB+QxXkz4+jsjq3fS3FUWe3raFY/oL4/rknqqmsMIFds6Ponv+oyO7Vgn/HylQprqIOuDYgwkmESejE7vC2o243lUBGjD+d8Y1Zq+jhItSf36TEMuMCqbRQ6ONbkSaL1+C1s6yH048dltY3+wsei/BDRhvKdvxJ0b+awe7sTrA7l4AI1O/jGFlBk9xYZ2ww9JUXw+Mrn4G6uwuwdRwqoYdlxgbArPHDxQRwA985VEKbFMcSzQ3oqEShvzEukMZwDs4dKIEvK3P634Bsifc++b5EuBLvJ66eNiAPHOzOS/A94O4rsQQ9ULvTUEMPxzNfuqoIJSRxs7YQ9i2ZA+nRfpAR7QdVf5hHdS8kiPOkJSScRI3Zyq+51R9lKPOumwE+dTNg6eZoEez2JDcdaE63BQW5MlXuNnj26JEWdLeKwYefP4HS5sdwsf5Dejh+2+DDcSMKmxhXEccQBk+V6zX5JPQxhmNYfsImxtrHe+C3E47hVywlYCK3TvOsTWBetYngXZsEH80K4AHdGNlJgtwIGv2OIFfWW1akBX7i6hNYsu978FP2gn9mH9nM/AsE9FnBe3SM4lGIR2LvyTr4fM8WqH37VSqJt3xt4XXXcaS3fO3gvSmT4IM/psKXpduh9+MD2sdo4SbtY9QxK+yq5/4EhvCYSMr2WA6Wh+4IRGg36BAU5AY9uVslK/4MFldy4L6ZveCX2Qu+6Ct7ISHrtvhjRCeR5TDYmqSgMsGEppsOgXm2I2GZnz2sUXjAuwoPSgB/eXFsobMF1C5Phm38KbZ9ZjjdC+9pNWaUjMrHo2Y689ifwLz2J4Ln/kRAW7g4mHUEurCOIFcCRr+d73cmRjOhbBB+Ws4jERjlk9Ev7B8vP0blgiuOq4gbdb6dCUHXvDUfPs3LhBv7C+D2wb0kLCP8gatcMoeSwQTxGrwW70El1vBnMB72grHeCB/TBM+aBNBVcPl0+JfcjbUHIDgm4Qpo2wOc2XcfHhNXf1HFd+CToZKoF3yUveAtiSVkdcD1ur3il2iyw1hIcRgLG6J84Z9lO+jHS/hTI/yZwbK5VpkNylh/mps8YTScVC7nv0gL4ck5f0iJM0rTs5jvkuNRPR04JZDFBNyrp7Gtb4eI0G0BLtAW6AKdSdEifMPVJwQ6sLgkBK3OvtL/Of3en+iTAo9ELCP8Njq86nU4nbUKmt5fDUdWv0Gl8pqzOc3BffFRxtvi53TfqRmg/sQRdi0fm6tntyao2b1qOrhVTWPSJNyqpjKMX4jyBILn9TB7i5jAlF194JWu6leGxB9A2wtaxCRwU+54JYIg8XjF0wV/6ObIjMQ/NLjyWxJD6etUgO85mQbqVgembnWEI1ssj+k57Yxoc6+aBgPJbd9UNi8rgrX5ObFbfk6szd8Zfrx8keC/vqsBz3QVCeEE//nqgcU7/glf1ZZq/aXE0yZ7dhSdRvhbgJu8+g/z4NNcJX3Fcl+lufB9YyyoWycwlKZ1Itw8bNOm57pvCnPfNw1QbqSp5GMcfYw1JHhRArf8ncUzv+mrp+CR3sNpA2/TewiUs9KYNK6CyI2dcLj0OJ0kun/q8dy/d6ySYgjPnWCr4clZb1Cft2fq8xPIalrt4f5JG5WeW+VUcK2cwtD+nCLyY+GWryO76ePAhPIpbvoR3Df0iBJgtWID+JQs78/f8m/Ymt8CF480QNdHB+DOkXK4c6gAOo+8D3frV7Oej1LghyYFIKz6vC3TnLcDzXl76pPfag96LpXxzJWSkGoKuFZMId+lIp45V8Sz3NcD4aaPo5hAUeN/tGAFuT2nrzsmxPBeQkPQflhBtpxa7XAc1C02TNNqS76eU2GMyrkijrkgcMUUQB+tS3k89THuXB7H/Itj4YtgZ1B3d9KDjl15DG7re8B1/UOyCEJW6utYYa6rzrzGr57y9H0EhbDqFhlTn7cBFJeADcXIcj7F9Oy3K9oQEuVUHsdE8PJ4URhHrVkRDP+5dIGe1aV6RkCcOLiBpTum238I17o1dE/W+3eC0rTICLBf1gxj/XFrhrpxcFybnuVb3vXOZfHgzMM6l8Vp+U5lsQxF8bJ4uHS4RHzdaWV94LL+Ibis7+Htr1f0zl7xfs9ubgR1y3jQ6EjdYg3qc1ZM3YKyFvun802b9czmOudwcBwsJcP3UY6lMcyJbCxDzc1JEB9Yf/kJOK97CM7rea3joCj2XyTMq7/8WLyf5mIQU7dYMg0BorVEaISlPmd5tVjBrmVGuXpGQePSEJJAS2MBRcmUCuJinLj+he4vxIemlj4Cp3UPRSGU07oHIqh0THvOQ0gt7RPvw+4dEkB5jWPqcxaMs5agoRj2LUHTwmn6ZIMEvcFD9Y0JriQWHEqiKQlH8mMYWqkwhnMiDqTCoyff04M7e55B5HYVOK57QOCOaznb7z8UYzhHiEXuUEGn6hnd49Hj70FzMQBhOdCz5uSj1UgtyYIfN2cy08Ey+py2WunX7FgSw4PGgMPeaEb9vUKMi1Ofj2V9UiyuHiaRUtpHcD8Rn4BUyaV9dI3Qer/ZyEMhnBkjnTPHmKRvxjTnzAGF8ctlo6+KfyeNI6xXOOxFcE4T90Sx/n60VpzG9nCxgks1IgS2o5ceQ/i2Hpi49gE4rH0gWkHJJb1wVFLz2I58UQ49zVgeIrBEpkxzTtrnpDlrBskxBqliAi8Y6Bvb54SpJuyJYigC5CHRTuSFY2ilMXwTWALSdq1LA6f+9QTyT/0ABad/gKOXftRacWyPHn8HWa3FcKjBCdRnx+IqIzDvm4KGfEFjQXN2LKjPjGEoHBPLR2gmU22VAtTE4miYUBzJJhZHAWlPNNjzffuiSEoC+xP48dD9C9iRr/+qBfi89mnX5xBas4CFlskZwok6M5qRxP4YEg8P6jOjMAEof3d4pRY8NnwLtjsVPQLYhKIoIEt+pFYfocU+jvF9Rc2rkHW+mADvPPpWBEYfY/kXq8GnIpG7tigS2k9ZEBAHNhoT0Pab0dcaI1mbvqC9+kIbOcVWac/D2hVFMBGcrCCub7cbx+mNiD7G7XdzwphguXFpLJytrvMG9RkTpjmLYCYIykOP5H2UibZtHsky0gyUutxazWpNwFUBQpAAb787gpd0XLcvjQnzI8C2MJzg0fcuVkD738xAw0MRYDNCmoCGYLFvzCjWPBLUZ0aSvXFgxC1d3p80fRMDmc0OucquMAIE4UOlFmE4G8YEMLScwmhMkG7frjAccg46MgTSEJgxe9psxNQkYz5mxNA+bRpBMdT9EyNUsp8rHd023N8szaYgjKGEh3KKALuCcE6F4WBbEA79c7gx7IvxAm6O9LrJe4N5qH44zjfigY1ALdrhTN00gmxC8IuJupzPbSZxtpn48IFkk68QIcV4fthP5gmS5SsYXoM6eNSWAxMAm0fAU95ysC8zddNwTIpT03BIT3kpU5fvFzXjOJmSwPLDeAjOogQwWZ6C2eZjUmEkcZzvCxY1t9yXgKTSNCOsdkzdNIxRvOllyEh98fmb9r81Q9fRidZbJ6tkeQoRxCYvDMbnhTJZXihDX4jZ5CkojsI+XiPtt39sQnAIpq1hoG4yZGifNg5l6sah7H6DoSolRj9Nl+c3Nf2RBjLLjIA2AswNZbJc3uYpOMjcUDY+V86EMVHiuJy9U+XKwRGoISAkgXMxzjYORQuflRhclZkO+mUb9tc0o9jxSgHMOlfOZLmhBGqdgz5nBX98DjeGCt4dCO0fj8RV5sSDqhsNRGh140vs/vEhqvQU/d9W77+04dsYNc+hEkERUiqrXSGUgFVOCI1Z58gpXvoXGQGqGw0QmtPpl0T//vEXe9JTBiuNhw0y1n3e/1nDRF72M0szX+VzFcEJOFsuiovJYVJhIML3C8FPD2Hq00PgdPaLzctmDl7x/wo+UMNkcLMbJ9rmjFnq1myxwb8Nk7DcOZl9cGgc3D+ur/qmVr/t8Eb9+p1LB+ckxwxK/b2g/xeP0cIDMtBgEAAAAABJRU5ErkJggg==" InformativeScreenshot="b8f139e8d45562c8094ba6ed8b4b7533.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg" Selector="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" Url="https://chatgpt.com/" Version="V2">
+                    <uix:TargetApp.Arguments>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.Arguments>
+                    <uix:TargetApp.WorkingDirectory>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.WorkingDirectory>
+                  </uix:TargetApp>
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <Sequence DisplayName="PHASE 3 — 저장 및 전달" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_2">
+                <ui:GetFromClipboard.Result>
+                  <OutArgument x:TypeArguments="x:String">[meetingMinutes]</OutArgument>
+                </ui:GetFromClipboard.Result>
+              </ui:GetFromClipboard>
+              <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[&quot;C:\Users\consu\OneDrive\바탕 화면\회사 작업 폴더\실제 프로젝트\AX기반의 차세대 업무 시스템 구축을 위한 ISMP\회의록 초안 폴더\&quot; +  &quot;NIA회의록.txt&quot;+Now.ToString(&quot;yyyyMMdd_hh&quot;)]" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[meetingMinutes]" />
+            </Sequence>
+            <uga:DeleteFileOrFolderConnections BrowserFileOrFolderId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FileOrFolderFriendlyName="{x:Null}" FileOrFolderIdBackup="{x:Reference __ReferenceID1}" ManualEntryFileOrFolderId="{x:Null}" AuthScopesInvalid="False" ConnectionId="daae480c-183c-43f0-b909-559aaf1855a3" DisplayName="Delete File/Folder" FileOrFolder="[CurrentItem]" FileOrFolderInputMode="UseExisting" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="DeleteFileOrFolderConnections_1" PermanentlyDelete="True" UseConnectionService="True">
+              <uga:DeleteFileOrFolderConnections.Item>
+                <ugam:DriveItemArgument BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" Existing="[CurrentItem]" InputMode="UseExisting">
+                  <ugam:DriveItemArgument.Backup>
+                    <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UseExisting">
+                      <usau:BackupSlot.BackupValues>
+                        <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
+                          <x:Null />
+                          <x:Null />
+                          <x:Null />
+                        </scg:List>
+                      </usau:BackupSlot.BackupValues>
+                    </usau:BackupSlot>
+                  </ugam:DriveItemArgument.Backup>
+                  <ugam:DriveItemArgument.FullPathHint>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ugam:DriveItemArgument.FullPathHint>
+                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                </ugam:DriveItemArgument>
+              </uga:DeleteFileOrFolderConnections.Item>
+            </uga:DeleteFileOrFolderConnections>
+          </Sequence>
+        </ActivityAction>
+      </uga:ForEachFileFolderConnections.Body>
+      <uga:ForEachFileFolderConnections.FilterSelectionBackup>
+        <usau:BackupSlot x:TypeArguments="ugae:FilterMode" StoredValue="ConditionBuilder">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugae:FilterMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:ForEachFileFolderConnections.FilterSelectionBackup>
+      <uga:ForEachFileFolderConnections.Item>
+        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1fgxwN8QnumOiYTpw6qEzaGRcjqBk_RZV" FriendlyName="UIPATH" FullPathHint="My Drive/UIPATH" InputMode="Browse">
+          <ugam:DriveItemArgument.Backup>
             <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="Browse">
               <usau:BackupSlot.BackupValues>
                 <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
               </usau:BackupSlot.BackupValues>
             </usau:BackupSlot>
-          </ugam:TriggerDriveItemArgument.Backup>
-          <ugam:TriggerDriveItemArgument.ParentIdFullPathHint>
+          </ugam:DriveItemArgument.Backup>
+          <ugam:DriveItemArgument.DriveId>
+            <InArgument x:TypeArguments="x:String" />
+          </ugam:DriveItemArgument.DriveId>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
             </InArgument>
-          </ugam:TriggerDriveItemArgument.ParentIdFullPathHint>
-        </ugam:TriggerDriveItemArgument>
-      </ugadt:NewFileCreated.DriveItem>
-    </ugadt:NewFileCreated>
-    <Sequence DisplayName="PHASE 1 — 핸드폰 stt 다운" sap:VirtualizedContainerService.HintSize="522,268" sap2010:WorkflowViewState.IdRef="Sequence_12">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Rename" ConnectionId="daae480c-183c-43f0-b909-559aaf1855a3" DestinationPath="C:\Users\consu\OneDrive\바탕 화면\회사 작업 폴더\실제 프로젝트\AX기반의 차세대 업무 시스템 구축을 위한 ISMP\회의록 TXT 폴더" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" File="[Created_file]" FileInputMode="UseExisting" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_2" NewResult="[downloadedFile]" UseConnectionService="True">
-        <uga:DownloadFileConnections.FileIdBackup>
-          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UseExisting">
-            <usau:BackupSlot.BackupValues>
-              <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="3">
-                <x:Null />
-                <x:Null />
-                <x:Null />
-              </scg:List>
-            </usau:BackupSlot.BackupValues>
-          </usau:BackupSlot>
-        </uga:DownloadFileConnections.FileIdBackup>
-        <uga:DownloadFileConnections.Item>
-          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" DriveId="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" Existing="[Created_file]" InputMode="UseExisting">
-            <ugam:DriveItemArgument.FullPathHint>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" Value="" />
-              </InArgument>
-            </ugam:DriveItemArgument.FullPathHint>
-            <ugam:DriveItemArgument.ParentIdFullPathHint>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" Value="" />
-              </InArgument>
-            </ugam:DriveItemArgument.ParentIdFullPathHint>
-          </ugam:DriveItemArgument>
-        </uga:DownloadFileConnections.Item>
-      </uga:DownloadFileConnections>
-    </Sequence>
-    <Sequence DisplayName="PHASE 2 — ChatGPT 브라우저 자동화" sap:VirtualizedContainerService.HintSize="522,2769" sap2010:WorkflowViewState.IdRef="Sequence_4">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ChatGPT" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2677" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V2">
-        <uix:NApplicationCard.Body>
-          <ActivityAction x:TypeArguments="x:Object">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="486,2483" sap2010:WorkflowViewState.IdRef="Sequence_13">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '사이드바 열기'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com" ContentHash="M4q_bkLG3Uaapo6mqAbu2A" DesignTimeRectangle="26, 105, 22, 21" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='use' /&gt;" Guid="999bd245-2697-4a6b-bf8e-2d2f9dea5cf7" InformativeScreenshot="b58719701e7605a45eebbff247277120.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/zWDKSX9HAEGTmhPup9-Yfw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '회의록 작성 접속'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com" ContentHash="PEiQ4MPfJkWLZzfL2Rpk1Q" DesignTimeRectangle="105, 1259, 228, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='NIA 회의록 작성' class='truncate' parentid='stage-slideover-sidebar' tag='DIV' /&gt;" Guid="a017c1c3-2abb-4320-ae6c-b38dad1fdec5" InformativeScreenshot="d801971539fca1a5574df930fb2a8a06.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/PCfXLzAtDkyx9NKWQD6Gdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'BUTTON composer-plus-btn'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="oB4CRiRyyk6hse3_e7-p4w" DesignTimeRectangle="916, 649, 79, 79" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='composer-plus-btn' tag='BUTTON' /&gt;" Guid="fa193e58-e931-4c7c-a91a-0457e8841e84" InformativeScreenshot="0d5f6fbcb6e24ae0f71a8d91c4fdeb2e.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/56keNxELZUCH46hTJo8vxQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '사진 및 파일 추가'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="0VIFcr3w0EqhjOgI0iNblw" DesignTimeRectangle="993, 759, 248, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='truncate' parentid='radix-_r_a3_' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' idx='44' /&gt;" Guid="cddb88f1-c6c3-4d8d-a6ab-614a9cf4f714" InformativeScreenshot="5f03294b59cf652b84902b7da2307713.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/Hhfh8rS7Pk2bUTPzBi7JlQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Text="[downloadedFile.LocalPath]" Version="V5">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="wUW6nCwVR0SRS2FtNS7_uw" DesignTimeRectangle="430, 1420, 998, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="d9e8ebd7-4ff5-440d-a536-de64df73f890" InformativeScreenshot="dbc4a62eedfec78595b160ed37982b6a.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/0qEmcsmkJ0mzClmLBO7ITA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click '열기(&amp;O)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="kBAxMWBFk0qFdVIjHFuENg" DesignTimeRectangle="1489, 1469, 176, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='열기(&amp;amp;O)' /&gt;" Guid="56279307-5167-4e01-9103-4668272f19c7" InformativeScreenshot="9861a957288d82d30d4c92589c9f6770.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/YTadk1aiN0OPDuH2qDRQ3Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="[UiPath.UIAutomationNext.Enums.NTypeByClipboardMode.Always]" DisplayName="Type Into 'P'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Text="[promptText]" Version="V5">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="Ts16O4gvfECxJUDU9MJP3g" DesignTimeRectangle="1009, 661, 1368, 53" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" Guid="656f6951-90c0-47a7-ba0c-797d66833048" InformativeScreenshot="13c6f53a7dc30beccf48fe6ed1fbef10.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/nuf2PSeiakKJU4tppHNPdA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'use cdnassetssprites…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="r_YihSN5HEG5RvfSd3jDBg" DesignTimeRectangle="2509, 673, 26, 31" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='composer-submit-button' tag='use' /&gt;" Guid="737cf75b-6cfb-4da9-a181-013ab11860c2" InformativeScreenshot="84dd01970046b742af6a9cf80e4be9f4.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/_U38tDL8wEu0KZ1GrPprKw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-              </uix:NClick>
-              <uix:NCheckState DisplayName="Check App State 'svg'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,767" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Timeout="60" Version="V5">
-                <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="450,439" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'svg(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="n3bnfkpXLUKmscykpQCS-A" DesignTimeRectangle="1717, 1413, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='thread-bottom-container' tag='svg' /&gt;" Guid="f5fb4a66-782e-4881-b49a-008796c50f13" InformativeScreenshot="c4e9aac01bf63a9f2e6797601c849d33.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/sBjyWswTdkuANZk9KeeyYA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NClick.Target>
-                    </uix:NClick>
-                    <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'DIV(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="334,162" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="sPaB9iQLgU2vkyN_WuDCdg" DesignTimeRectangle="894, 1112, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='icon' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;svg' idx='190' parentid='thread' tag='svg' /&gt;" Guid="5a5fe57d-0412-41d2-94d0-d34759a197ac" ImageAccuracyArgument="0.5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG7SURBVGhD7ZeBjYMwDEW7KEOwBEMwBEMwBEswBKdfydK/iDg/dSrgLk+yVCGa5DkmhtfxcF7phafRBa6mC1xNU4FlWd4xTdMxjuM7hmEoht2LmOf5WNf12Pc9Hf6UJgKYDItOFxYJyECkRFgAi08nbxWQ2LYtnfIXYYE080rWciAZWDCXHn57hAQwGS++lC0ViLAEnqscIQFku0Xmz+DkYJdzhARwYrTOvsHPlldGIQGuf/XYq6ELMCgRa1IWNoHVqRfWoGpKjcfPURT4VpNS4P/kcAW+3aRKZcf353AF0syjhFACmLg2rAR5PJSVR0iAz3ilpavwuAhv3JAAn/GtmxSP7XXZkAC38lKt1qJ22WYCreHDoQukFwzlz59SK+D1jS7wCf9CgPuF1/BuKZB+6Xl96BYC3uvGmSBzuYAXyivMbQWUt1VwCwH+8LE3XpWswB06scLfFeCPGaUWa1DPeAVJoKYmFVjA+x5QyApwM1FPBIWaJqWQFcCC+TlQzmQPjFfbpBSyAiA97lpHJCGGKwAwCe9Ei4juJlMUANgJ1CpODGw7FqBK2b2I2ialIAncmS5wNV3gah4v8AMVl800IxLpLQAAAABJRU5ErkJggg==" InformativeScreenshot="f2e8898603c6042a03653ec015b2ccd4.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/8JiUUv6K80Od6gu_1ABcJw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NClick.Target>
-                    </uix:NClick>
-                  </Sequence>
-                </uix:NCheckState.IfExists>
-                <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Sequence>
-                </uix:NCheckState.IfNotExists>
-                <uix:NCheckState.Target>
-                  <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="OMuKIDkxIUy0PuWKZfcoLQ" DesignTimeRectangle="2500, 1563, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='icon' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;div&amp;gt;svg' parentid='thread-bottom-container' tag='svg' /&gt;" Guid="1cc6c640-8836-4f35-8479-80dd0000abfd" InformativeScreenshot="f9dde29eaf65461f33287a9713012bac.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/LeY8T0IP8ECYaj_3syJAgg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NCheckState.Target>
-              </uix:NCheckState>
-            </Sequence>
-          </ActivityAction>
-        </uix:NApplicationCard.Body>
-        <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="1907, -296, 2906, 1730" BrowserType="Chrome" ContentHash="gCjVGIZSsE2ALFjNBHXTgQ" IconBase64="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" InformativeScreenshot="b8f139e8d45562c8094ba6ed8b4b7533.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg" Selector="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" Url="https://chatgpt.com/" Version="V2">
-            <uix:TargetApp.Arguments>
-              <InArgument x:TypeArguments="x:String" />
-            </uix:TargetApp.Arguments>
-            <uix:TargetApp.WorkingDirectory>
-              <InArgument x:TypeArguments="x:String" />
-            </uix:TargetApp.WorkingDirectory>
-          </uix:TargetApp>
-        </uix:NApplicationCard.TargetApp>
-      </uix:NApplicationCard>
-    </Sequence>
-    <Sequence DisplayName="PHASE 3 — 저장 및 전달" sap:VirtualizedContainerService.HintSize="522,307" sap2010:WorkflowViewState.IdRef="Sequence_5">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
-        <ui:GetFromClipboard.Result>
-          <OutArgument x:TypeArguments="x:String">[meetingMinutes]</OutArgument>
-        </ui:GetFromClipboard.Result>
-      </ui:GetFromClipboard>
-      <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[&quot;C:\Users\consu\OneDrive\바탕 화면\회사 작업 폴더\실제 프로젝트\AX기반의 차세대 업무 시스템 구축을 위한 ISMP\회의록 초안 폴더\&quot; +  &quot;NIA회의록.txt&quot;+Now.ToString(&quot;yyyyMMdd_hh&quot;)]" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[meetingMinutes]" />
-    </Sequence>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:ForEachFileFolderConnections.Item>
+    </uga:ForEachFileFolderConnections>
   </Sequence>
 </Activity>

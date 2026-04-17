@@ -4,28 +4,7 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "40c98eec-0bfc-444b-abd9-326ade467245",
-      "type": "process",
-      "input": {
-        "type": "object",
-        "properties": {
-          "UiPathEventConnector": {
-            "type": "string"
-          },
-          "UiPathEvent": {
-            "type": "string"
-          },
-          "UiPathEventObjectType": {
-            "type": "string"
-          },
-          "UiPathEventObjectId": {
-            "type": "string"
-          },
-          "UiPathAdditionalEventData": {
-            "type": "string"
-          }
-        },
-        "required": []
-      }
+      "type": "process"
     }
   ]
 }

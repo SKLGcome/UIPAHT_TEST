@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="vDvY85JMX06NW4iQ4xsmug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="0VIFcr3w0EqhjOgI0iNblw" Reference="WH_7FIoQxkOZtTfbjXxrdQ/Hhfh8rS7Pk2bUTPzBi7JlQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" DesignTimeRectangle="993, 759, 248, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='truncate' parentid='radix-_r_mv_' tag='DIV' /&gt;" Guid="d8303aa2-df6c-477e-8886-0af6e3907758" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="5f03294b59cf652b84902b7da2307713.jpg" xmlns="">0nRIW_AHkq0ebgdlx_cTDfg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" DesignTimeRectangle="993, 759, 248, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='truncate' parentid='radix-_r_a3_' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' idx='44' /&gt;" Guid="cddb88f1-c6c3-4d8d-a6ab-614a9cf4f714" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="5f03294b59cf652b84902b7da2307713.jpg" xmlns="">0GVOCZ8tBqk--AUC82nChCQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

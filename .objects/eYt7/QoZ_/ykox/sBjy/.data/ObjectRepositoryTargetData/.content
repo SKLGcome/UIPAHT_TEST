@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="n3bnfkpXLUKmscykpQCS-A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" DesignTimeRectangle="1717, 1413, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='thread-bottom-container' tag='svg' /&gt;" Guid="f5fb4a66-782e-4881-b49a-008796c50f13" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c4e9aac01bf63a9f2e6797601c849d33.jpg" xmlns="">0yP68ulljTUKLUw1yWpm6dg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

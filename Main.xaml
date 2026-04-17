@@ -80,6 +80,7 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -139,9 +140,11 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="522,3375" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1019,3324" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sttResult" />
       <Variable x:TypeArguments="x:String" Name="meetingMinutes" />
@@ -210,19 +213,19 @@
         </uga:DownloadFileConnections.Item>
       </uga:DownloadFileConnections>
     </Sequence>
-    <Sequence DisplayName="PHASE 2 — ChatGPT 브라우저 자동화" sap:VirtualizedContainerService.HintSize="522,2575" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="PHASE 2 — ChatGPT 브라우저 자동화" sap:VirtualizedContainerService.HintSize="522,2524" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ChatGPT" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2483" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome ChatGPT" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2432" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="486,2289" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="486,2238" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -282,28 +285,22 @@
                   <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" ContentHash="r_YihSN5HEG5RvfSd3jDBg" DesignTimeRectangle="2509, 673, 26, 31" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='composer-submit-button' tag='use' /&gt;" Guid="737cf75b-6cfb-4da9-a181-013ab11860c2" InformativeScreenshot="84dd01970046b742af6a9cf80e4be9f4.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/_U38tDL8wEu0KZ1GrPprKw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NCheckState DisplayName="Check App State 'svg'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,573" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Timeout="60" Version="V5">
+              <uix:NCheckState DisplayName="Check App State 'svg'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,522" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Timeout="60" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="450,388" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="450,194" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="meeting_draft" />
+                    </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get Text '거의 다 왔어 근데 지금 상태 그대로는 아…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
+                    <uix:NGetText DisplayName="Get Text '회의 초안'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,134" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" TextString="[meeting_draft]" Version="V5">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="W7stnh9qrEuodFMFTAWjng" DesignTimeRectangle="615, -4614, 2248, 5917" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' idx='28' parentid='thread' tag='DIV' /&gt;" Guid="518593ac-5460-4441-b02a-2cc6a5345c1a" InformativeScreenshot="3b050eee920660a0eff9974f9f4a50bf.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/NrJOxsv-T0-3VtKAGnCzMg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b3ee3939-d0d3-4567-806d-7172a473a357" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" ContentHash="y7Uyf1xMnUqJhj7_0ULV1Q" DesignTimeRectangle="894, 1088, 1690, 101" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' idx='57' parentid='thread' tag='DIV' /&gt;" Guid="bf6cac47-0cb0-49be-9467-95beb0cd6202" InformativeScreenshot="8de8a1a53d06e678b4f17b07b281a02b.jpg" Reference="WH_7FIoQxkOZtTfbjXxrdQ/Nq8irlGl9kK49AJ5HeVWKg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-                          <uix:TargetAnchorable.PointOffset>
-                            <uix:PointOffset Position="TopLeft" X="11" Y="22" />
-                          </uix:TargetAnchorable.PointOffset>
-                        </uix:TargetAnchorable>
-                      </uix:NClick.Target>
-                    </uix:NClick>
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
@@ -340,7 +337,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:WriteTextFile File="{x:Null}" FileName="{x:Null}" Output="{x:Null}" Text="{x:Null}" DisplayName="Write Text File" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" />
+      <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[&quot;C:\Users\consu\OneDrive\바탕 화면\회사 작업 폴더\실제 프로젝트\AX기반의 차세대 업무 시스템 구축을 위한 ISMP\회의록 초안 폴더\&quot; +  &quot;NIA회의록.txt&quot;+Now.ToString(&quot;yyyyMMdd_hh&quot;)]" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[meetingMinutes]" />
     </Sequence>
   </Sequence>
 </Activity>

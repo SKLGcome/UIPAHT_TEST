@@ -1,0 +1,14 @@
+﻿{
+  "Name": "사진 및 파일 추가",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Hhfh8rS7Pk2bUTPzBi7JlQ",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/Hhfh8rS7Pk2bUTPzBi7JlQ",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg",
+  "Created": "2026-04-17T05:41:51.9682699Z",
+  "Updated": "2026-04-17T05:41:51.9682699Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

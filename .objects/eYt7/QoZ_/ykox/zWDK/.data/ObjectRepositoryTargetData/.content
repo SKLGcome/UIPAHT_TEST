@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="M4q_bkLG3Uaapo6mqAbu2A" Reference="WH_7FIoQxkOZtTfbjXxrdQ/zWDKSX9HAEGTmhPup9-Yfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com" DesignTimeRectangle="26, 105, 22, 21" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='use' /&gt;" Guid="999bd245-2697-4a6b-bf8e-2d2f9dea5cf7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b58719701e7605a45eebbff247277120.jpg" xmlns="">0wS3sRBXKQE67RjMXBpTdOw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

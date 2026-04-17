@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kBAxMWBFk0qFdVIjHFuENg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" DesignTimeRectangle="1489, 1469, 176, 52" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='열기(&amp;amp;O)' /&gt;" Guid="56279307-5167-4e01-9103-4668272f19c7" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9861a957288d82d30d4c92589c9f6770.jpg" xmlns="">0_NtiKU4gwUW6B1tG86X14w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

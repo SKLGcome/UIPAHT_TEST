@@ -1,0 +1,13 @@
+﻿{
+  "Name": "use cdnassetssprites…",
+  "Type": "Element",
+  "Id": "_U38tDL8wEu0KZ1GrPprKw",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/_U38tDL8wEu0KZ1GrPprKw",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg",
+  "Created": "2026-04-17T06:12:07.7074315Z",
+  "Updated": "2026-04-17T06:12:07.7074315Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

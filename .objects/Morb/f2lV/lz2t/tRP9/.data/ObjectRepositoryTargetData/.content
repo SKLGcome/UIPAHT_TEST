@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2SFx0Qd0uEu4XXdSOJLs1Q" Reference="WH_7FIoQxkOZtTfbjXxrdQ/tRP9cg2bm0KZaF_nKi_S_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="nid.naver.com/nidlogin.login" DesignTimeRectangle="1060, 939, 109, 44" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='pw_label' tag='LABEL' /&gt;" Guid="7bc5e6a8-a766-493c-9b77-bbb263b26089" ScopeSelectorArgument="&lt;html app='chrome.exe' title='네이버 : 로그인' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c5fd6ea048cbf20b18829fbaf7684a1b.jpg" xmlns="">0lgfbwkwo1ku28GB-ACnCKA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

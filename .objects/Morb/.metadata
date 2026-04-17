@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome 클로바노트",
+  "Type": "App",
+  "Id": "MorbpfOMr0m74DEek9D0pw",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/MorbpfOMr0m74DEek9D0pw",
+  "Created": "2026-04-17T04:57:58.7055718Z",
+  "Updated": "2026-04-17T04:57:58.7055718Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

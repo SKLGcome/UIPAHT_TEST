@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OMuKIDkxIUy0PuWKZfcoLQ" Reference="WH_7FIoQxkOZtTfbjXxrdQ/LeY8T0IP8ECYaj_3syJAgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" DesignTimeRectangle="2500, 1563, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='icon' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;div&amp;gt;svg' parentid='thread-bottom-container' tag='svg' /&gt;" Guid="1cc6c640-8836-4f35-8479-80dd0000abfd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f9dde29eaf65461f33287a9713012bac.jpg" xmlns="">0v10FaVarlE-A4wr-WLL6kg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

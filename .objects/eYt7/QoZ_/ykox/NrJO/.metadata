@@ -1,0 +1,13 @@
+﻿{
+  "Name": "거의 다 왔어 근데 지금 상태 그대로는 아…",
+  "Type": "Element",
+  "Id": "NrJOxsv-T0-3VtKAGnCzMg",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/NrJOxsv-T0-3VtKAGnCzMg",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg",
+  "Created": "2026-04-17T06:21:30.7414251Z",
+  "Updated": "2026-04-17T06:21:30.7414251Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wUW6nCwVR0SRS2FtNS7_uw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" DesignTimeRectangle="430, 1420, 998, 32" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="d9e8ebd7-4ff5-440d-a536-de64df73f890" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='열기' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="dbc4a62eedfec78595b160ed37982b6a.jpg" xmlns="">0X90K8twEaEmXd71GberwrQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

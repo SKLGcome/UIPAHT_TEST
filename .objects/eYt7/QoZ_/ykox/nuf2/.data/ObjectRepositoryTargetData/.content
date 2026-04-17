@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ts16O4gvfECxJUDU9MJP3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" DesignTimeRectangle="1009, 661, 1368, 53" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" Guid="656f6951-90c0-47a7-ba0c-797d66833048" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="13c6f53a7dc30beccf48fe6ed1fbef10.jpg" xmlns="">0UkJL4A0l4E6G4VTtXMYvWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome 클로바노트",
+  "Type": "Screen",
+  "Id": "lz2t0e4R10icU8F-NglXRw",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/lz2t0e4R10icU8F-NglXRw",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/f2lV38652k6xyGnXnns17w",
+  "Created": "2026-04-17T04:57:58.751379Z",
+  "Updated": "2026-04-17T04:57:58.751379Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "열기(&O)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "YTadk1aiN0OPDuH2qDRQ3Q",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/YTadk1aiN0OPDuH2qDRQ3Q",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg",
+  "Created": "2026-04-17T05:45:38.9686061Z",
+  "Updated": "2026-04-17T05:45:38.9686061Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

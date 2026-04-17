@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome ChatGPT",
+  "Type": "App",
+  "Id": "eYt75btERUyKKB2iwy64NA",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/eYt75btERUyKKB2iwy64NA",
+  "Created": "2026-04-17T05:31:14.128847Z",
+  "Updated": "2026-04-17T05:31:14.128847Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

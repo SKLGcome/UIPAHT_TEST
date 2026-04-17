@@ -1,0 +1,6 @@
+{
+  "Name": "회의록 자동화",
+  "ProjectType": "Process",
+  "Description": "빈 프로세스",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "BUTTON composer-plus-btn",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "56keNxELZUCH46hTJo8vxQ",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/56keNxELZUCH46hTJo8vxQ",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/ykoxQ82GG0SfeVlqlScaMg",
+  "Created": "2026-04-17T05:41:38.3965531Z",
+  "Updated": "2026-04-17T05:41:38.3965531Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

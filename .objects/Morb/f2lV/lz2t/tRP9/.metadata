@@ -1,0 +1,14 @@
+﻿{
+  "Name": "아이디 또는 전화번호",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "tRP9cg2bm0KZaF_nKi_S_g",
+  "Reference": "WH_7FIoQxkOZtTfbjXxrdQ/tRP9cg2bm0KZaF_nKi_S_g",
+  "ParentRef": "WH_7FIoQxkOZtTfbjXxrdQ/lz2t0e4R10icU8F-NglXRw",
+  "Created": "2026-04-17T05:02:08.1597407Z",
+  "Updated": "2026-04-17T05:02:08.1597407Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

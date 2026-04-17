@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qqnvJ7eDS0WXjDlSVOamgA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="clovanote.naver.com/w/GLGgsV3WxjH8GnDaoecw/home" DesignTimeRectangle="317, 403, 100, 100" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='tutorial_home_origin' tag='svg' /&gt;" Guid="df9586a4-25a1-473f-811c-e4a99f60b9c7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='클로바노트 - 홈' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e7344d412e575929669e146b008df334.jpg" xmlns="">0webtvGtIMU6Zsi5zr_5hnA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="W7stnh9qrEuodFMFTAWjng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" DesignTimeRectangle="615, -4614, 2248, 5917" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' idx='28' parentid='thread' tag='DIV' /&gt;" Guid="518593ac-5460-4441-b02a-2cc6a5345c1a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3b050eee920660a0eff9974f9f4a50bf.jpg" xmlns="">0kOrm7AxoCUqhUzalfnSElA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

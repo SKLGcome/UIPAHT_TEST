@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="r_YihSN5HEG5RvfSd3jDBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/project" DesignTimeRectangle="2509, 673, 26, 31" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='composer-submit-button' tag='use' /&gt;" Guid="737cf75b-6cfb-4da9-a181-013ab11860c2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - NIA 회의록 작성' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="84dd01970046b742af6a9cf80e4be9f4.jpg" xmlns="">03aMP0RxhLU6ZmiRK3bw_7A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

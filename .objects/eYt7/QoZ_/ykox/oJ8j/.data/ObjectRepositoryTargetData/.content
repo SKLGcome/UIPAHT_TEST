@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R6waqgo5kUOYM0wXNzcHdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e2401f-b654-83a4-842f-c4e96a4c30f7" DesignTimeRectangle="717, 938, 777, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='prompt-textarea' tag='P' /&gt;" Guid="dbea5496-1077-4f5d-80b6-ab4f0f956438" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - 무한 루프 원인 분석' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f81690cfc3792eb7bda7e8fac464ad04.jpg" xmlns="">0ZuMMYA92nUmYYg9W-ZlJmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="n3bnfkpXLUKmscykpQCS-A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="gtBE4z_0gUOv7RfVLI70ng" Reference="WH_7FIoQxkOZtTfbjXxrdQ/sBjyWswTdkuANZk9KeeyYA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e1b9c2-9c08-83a5-a910-c2fe21d06bc4" DesignTimeRectangle="1717, 1413, 44, 44" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='thread-bottom-container' tag='svg' /&gt;" Guid="f5fb4a66-782e-4881-b49a-008796c50f13" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UIPATH - UIPATH Flowchart 구조' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="c4e9aac01bf63a9f2e6797601c849d33.jpg" xmlns="">0yP68ulljTUKLUw1yWpm6dg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69e1b703b0c48191ad52a1b96a098c16-nia-hoeyirog-jagseong/c/69e58b1c-048c-83a2-9d55-10468a8f97f3" DesignTimeRectangle="1100, 888, 22, 22" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='thread-bottom-container' tag='svg' /&gt;" Guid="8f48d732-a978-44ac-bf8c-b15f4da98bee" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NIA 회의록 작성 - 강화학습 정책 평가' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a9112d9caed0189f0238279c9fd9cd26.jpg" xmlns="">05zkOeOYOXES1TsVVc0ccOg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

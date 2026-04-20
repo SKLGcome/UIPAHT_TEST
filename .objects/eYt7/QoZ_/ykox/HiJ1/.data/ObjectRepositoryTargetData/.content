@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EOPKo5xWok-alBbnmmcdrg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/g/g-p-69d4b4539b8081919e3dd73c69fd86e1-uipath/c/69e5a682-e188-83a4-8835-87092b6b8848" DesignTimeRectangle="682, 731, 35, 35" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' idx='9' parentid='thread' tag='SPAN' /&gt;" Guid="4beb2c78-a2be-40e6-869e-bfa05b5ea39d" ImageAccuracyArgument="0.72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVFhH7ZXRCYNADEBd1CFcwiEcwiEc4pZwCMsTAnL1NImkSMmDfFTO5pHES7e9mK5+8CZSzkvKeUk5Lynn5f/l5nne+r5vxjAM2ziO+zkLj+VIigCJWzFN034OyVJK/RdNHsshtixL/fiLdV13QULLIzmkkCOxBqpI9bS45JBBjHZJS/kt0WqdzKYWs5zM2F1QobqioXJSKapD4qtArm5hqBzJENSAICLHFofKyXxpELnjl5xyGs7kZGa1hMtxXq4ey/sQLncMy3aAcDlaKVePlXA5zd5tYZKzLG7r3j3DJCcJ5TKmiq3wzFiNSQ6oxN1+RV7b/ivMcr8k5byknJeU85JyXl4t9wHCgehl2OjB/gAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT - UIPATH' /&gt;" SearchSteps="Selector, Image" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="01a873df44d82c4ac23308994be968c4.jpg" xmlns="">0wm3FKqnGH0GT3cAdB58AqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
